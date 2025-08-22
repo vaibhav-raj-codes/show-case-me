@@ -43,7 +43,9 @@ body {
     padding: 3rem;                   /* Makes them huge */
     transition: background 0.3s ease, transform 0.2s ease;
     text-align: center;
+    aspect-ratio: 1 / 0.5;
   }
+
   .btn-tile:hover {
     background-color: #2a2a2a;       /* Gray shade hover */
     transform: translateY(-3px);     /* Subtle lift effect */
