@@ -1,0 +1,77 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.navbar {
+    background-color: #000a0a;
+    border-bottom: 1px solid #111;
+}
+
+.hero {
+    padding: 6rem 1rem;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #bbb;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-tile {
+    background-color: #0d0d0d;
+    /* Dark black background */
+    color: #fff;
+    font-size: 1.5rem;
+    /* Big font */
+    font-weight: 600;
+    border-radius: 1rem;
+    /* Smooth corners */
+    padding: 3rem;
+    /* Makes them huge */
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    aspect-ratio: 1 / 0.5;
+}
+
+.btn-tile:hover {
+    background-color: #2a2a2a;
+    /* Gray shade hover */
+    transform: translateY(-3px);
+    /* Subtle lift effect */
+}
+
+.btn {
+    box-shadow: 2px 2px 5px #555;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
